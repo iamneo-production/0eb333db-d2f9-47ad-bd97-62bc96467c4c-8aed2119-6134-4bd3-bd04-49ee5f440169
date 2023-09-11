@@ -10,15 +10,13 @@ public class SpringappApplication {
 
 	public static void main(String[] args) {
 		//SpringApplication.run(SpringappApplication.class, args);
-	   
-		//Write Your code Here 
-
-
+	ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+    Calculator obj =(Casio) context.getBean("casioobjref");
     int sum=obj.add();
     int diff=obj.sub();
     System.out.println(sum);
     System.out.println(diff);
-    System.out.println("hai");
+    System.out.println("rtyui");
 		
 	}
 
