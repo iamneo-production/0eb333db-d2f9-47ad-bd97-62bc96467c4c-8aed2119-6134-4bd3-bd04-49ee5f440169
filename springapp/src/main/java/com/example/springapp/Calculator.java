@@ -1,6 +1,9 @@
 package com.example.springapp;
 public interface Calculator {
-    
-int add();
-int sub();
+
+
+//Write Your Code Here
+    calculator() {
+        System.out.println("dfsa");
+    }
 }
